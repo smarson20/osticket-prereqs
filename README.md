@@ -28,7 +28,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <br>
 
-<p>I. Prepping the Stage</p>
+<p>**I. Prepping the Stage**</p>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -75,7 +75,7 @@ You will also be prompted with a window cautioning ' '. Click 'Yes' and proceed.
 <br>
 
 <p>
-II. Download and Prepare Installation Files
+**II. Download and Prepare Installation Files**
 </p>
 
 <p>
@@ -89,8 +89,11 @@ Download the osTicket-Installation-Files.zip and unzip it to your desktop.
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+
+
 <p>
- III. Enable Internet Information Services and Its Required Features
+ **III. Enable Internet Information Services and Its Required Features**
 </p>
 
 <p>
@@ -113,8 +116,10 @@ You will be presented with a menu of a large directory. Scroll to look for 'Inte
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 
+<br>
+
 <p>
-  IV. Install Required Components
+  **IV. Install Required Components**
 </p>
 
 <p>
@@ -132,38 +137,252 @@ From the osTicket-Installation-Files folder:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 
-<p>
-V. Setup PHP
-</p>
+</br>
+
+
+<br>
 
 <p>
-  -Navigate to the C: Drive and create a new directory. Title it C:\PHP.
-  -Unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the C:\PHP folder.
-  -Run the executable VC_redist.x86.exe. Follow through with the default prompts for the installer.
+**V. Setup PHP**
 </p>
+
+- Navigate to the C: Drive and create a new directory. Title it C:\PHP.
+- Unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the C:\PHP folder.
+- Run the executable VC_redist.x86.exe. Follow through with the default prompts for the installer.
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+</br>
+
+
+<br>
+
+<p>
+**VI. Install MySQL**
+  </p>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+From the os-Ticket-Installation-Files folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi).
 </p>
 
-<p>
-V. Setup PHP
+From the `os-Ticket-Installation-Files` folder, install **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`):
+
+- Select **Typical Setup**
+- After installation, launch the **MySQL Configuration Wizard**
+  - Choose **Standard Configuration**
+  - Set a **username** and a **reliable password**
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+
+</br>
+
+<br>
+
 <p>
-  -Navigate to the C: Drive and create a new directory. Title it C:\PHP.
-  -Unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the C:\PHP folder.
-  -Run the executable VC_redist.x86.exe. Follow through with the default prompts for the installer.
+  **VII. Configure Internet Informational Services (IIS)**
+</p>
+
+- Open IIS as an administrator.
+- Register PHP:
+  - Go to **PHP Manager** -> Register PHP Path -> `C:\PHP\php-cgi.exe`.
+- Reload IIS. At this point you will want to restart your computer. For Virtual Machine users, you may close the VM or sign out. Once in the Virtual Machines portal, click the 'Stop' button and then restart it by clicking the 'Start' button. This will effectively reset the VM.
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 
-<br />
+</br>
+
+
+
+<br>
+
+<p>
+  **VIII. Install osTicket**
+</p>
+
+- From the `osTicket-Installation-Files` folder:
+    - Unzip `osTicket-v1.15.8.zip`.
+    - Copy the `upload` folder into `C:\inetpub\wwwroot`.
+    - Rename the `upload` folder to `osTicket`.
+- Once again, restart your computer.
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+**IX. Configure osTicket**
+
+- Open `Internet Informational Services`:
+    - Navigate to **Sites** -> **Default** -> **osTickets**.
+    - On the right, click **Browse :80*.
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+*Note that certain extensions have not been enabled.* Return to `Internet Informational Services`:
+    - Navigate to **Sites** -> **Default** -> **osTicket**
+    - Double-click **PHP Manager** -> Click `Enable or disable an extension`.
+    - Enable the following extensions:
+        - `php_imap.dll`
+        - `php_intl.dll`
+        - `php_opache.dll`
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+**X. Update Configuartion Files**
+
+Rename `ost-config.php`:
+  -From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
+  -To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
+
+Assign Permissions:
+  - Disable inheritance -> Remove all permissions
+  - Add new permissions -> **Everyone** -> **Full control**
+
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+**XI. Complete osTicket Setup**
+
+In the browser, continue the osTicket setup:
+  - Set **Helpdesk Name**.
+  - Set **Default E-mail** (this will be the handle that receives e-mails from clientele).
+
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+**XII. Install HeidiSQL and Configure Database**
+
+From the `osTicket-Installation-Files` folder, install HeidiSQL.
+Open HeidiSQL and:
+  - Create a new session: **Username:** root / **Password:** root.
+  - Connection to the new session.
+  - Create a new database named `osTicket`.
+  
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+**XIII. Finalize osTicket Installation**
+
+In the browser, complete the setup by filling in the following:
+  - MySQL Database: osTicket
+  - MySQL Username: root
+  - MySQL Password: root
+
+**Install**
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+
+**XIV. Verify Installation**
+
+
+Access your help desk login page: `http://localhost/osTicket/scp/login.php`.
+
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h2> Conclusion </h2>
+
+<p>
+  Congratulations. You have now installed and configured osTicket on your WindowsOS! Your help desk system is ready to use!
+</p>
