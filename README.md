@@ -28,7 +28,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <br>
 
-<p>**I. Prepping the Stage**</p>
+## I. Staging
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -74,9 +74,9 @@ You will also be prompted with a window cautioning ' '. Click 'Yes' and proceed.
 
 <br>
 
-<p>
-**II. Download and Prepare Installation Files**
-</p>
+
+## II. Download and Prepare Installation Files
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -92,9 +92,8 @@ Download the osTicket-Installation-Files.zip and unzip it to your desktop.
 
 
 
-<p>
- **III. Enable Internet Information Services and Its Required Features**
-</p>
+
+ ## III. Enable Internet Information Services and Its Required Features
 
 <p>
   Open the Control Panel and navigate to the Programs and Features menu (e.g, Control Panel -> Programs). There you will be presented with a number of programs installed on your PC. To your left, you will be presented with the feature titled 'Turn Windows features on or off'. Click it. 
@@ -118,9 +117,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <br>
 
-<p>
-  **IV. Install Required Components**
-</p>
+  ## IV. Install Required Components
 
 <p>
 From the osTicket-Installation-Files folder:
@@ -142,9 +139,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <br>
 
-<p>
-**V. Setup PHP**
-</p>
+## V. Setup PHP
 
 - Navigate to the C: Drive and create a new directory. Title it C:\PHP.
 - Unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the C:\PHP folder.
@@ -165,9 +160,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <br>
 
-<p>
-**VI. Install MySQL**
-  </p>
+
+## VI. Install MySQL
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -201,9 +195,8 @@ From the `os-Ticket-Installation-Files` folder, install **MySQL 5.5.62** (`mysql
 
 <br>
 
-<p>
-  **VII. Configure Internet Informational Services (IIS)**
-</p>
+  ## VII. Configure Internet Informational Services (IIS)
+
 
 - Open IIS as an administrator.
 - Register PHP:
@@ -233,9 +226,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <br>
 
-<p>
-  **VIII. Install osTicket**
-</p>
+  ## VIII. Install osTicket
+
 
 - From the `osTicket-Installation-Files` folder:
     - Unzip `osTicket-v1.15.8.zip`.
@@ -254,7 +246,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 
-**IX. Configure osTicket**
+## IX. Configure osTicket
 
 - Open `Internet Informational Services`:
     - Navigate to **Sites** -> **Default** -> **osTickets**.
@@ -288,7 +280,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 
-**X. Update Configuartion Files**
+## X. Update Configuartion Files
 
 Rename `ost-config.php`:
   -From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
@@ -315,7 +307,7 @@ Assign Permissions:
 </p>
 
 
-**XI. Complete osTicket Setup**
+## XI. Complete osTicket Setup
 
 In the browser, continue the osTicket setup:
   - Set **Helpdesk Name**.
@@ -328,7 +320,7 @@ In the browser, continue the osTicket setup:
 </p>
 
 
-**XII. Install HeidiSQL and Configure Database**
+## XII. Install HeidiSQL and Configure Database
 
 From the `osTicket-Installation-Files` folder, install HeidiSQL.
 Open HeidiSQL and:
@@ -357,7 +349,7 @@ Open HeidiSQL and:
 </p>
 
 
-**XIII. Finalize osTicket Installation**
+## XIII. Finalize osTicket Installation
 
 In the browser, complete the setup by filling in the following:
   - MySQL Database: osTicket
@@ -371,7 +363,7 @@ In the browser, complete the setup by filling in the following:
 </p>
 
 
-**XIV. Verify Installation**
+## XIV. Verify Installation 
 
 
 Access your help desk login page: `http://localhost/osTicket/scp/login.php`.
