@@ -120,16 +120,18 @@ You can confirm the installation of the web servers was a success by typing '127
 
 From the `osTicket-Installation-Files folder`:
 
-- Install the PHP Manager for IIS: PHPManagerForIIS_V1.5.0.msi.
-- Install the Rewrite Module: rewrite_amd64_en-US.msi.
+- Install the PHP Manager for IIS: `PHPManagerForIIS_V1.5.0.msi`.
+- Install the Rewrite Module: `rewrite_amd64_en-US.msi`.
 
 </p>
 
+![Alt text](https://imgur.com/Oj81DcW.png)
+
+![Alt text](https://imgur.com/o7kMVKL.png)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Follow the default installation for both executables.
 </p>
 
 </br>
@@ -139,8 +141,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## V. Setup PHP
 
-- Navigate to the C: Drive and create a new directory. Title it C:\PHP.
-- Unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the C:\PHP folder.
+- Navigate to the C: Drive and create a new directory. Title it `C:\PHP`.
+
+![Alt text](https://imgur.com/9poP1Yr.png)
+
+![Alt text](https://imgur.com/eCzLpuJ.png)
+
+
+- Unzip `PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip)` into the `C:\PHP` folder.
+
+![Alt text](https://imgur.com/7SCofDY.png)
+
 - Run the executable VC_redist.x86.exe. Follow through with the default prompts for the installer.
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
