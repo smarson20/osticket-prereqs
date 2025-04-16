@@ -215,8 +215,10 @@ From the `os-Ticket-Installation-Files` folder, install **MySQL 5.5.62** (`mysql
 
 ![Alt text](https://imgur.com/y8IZaim.png)
 
-- Reload IIS. At this point you will want to restart your computer. For Virtual Machine users, you may close the VM or sign out. Once in the Virtual Machines portal, click the 'Stop' button and then restart it by clicking the 'Start' button. This will effectively reset the VM.
+- Reload IIS. Under the `Manage Server` heading in the `Actions` tabs, click the `Restart` button to reload the server.
 
+
+![Alt text](https://imgur.com/SmtYaEw.png)
 
 
 <br>
@@ -226,53 +228,64 @@ From the `os-Ticket-Installation-Files` folder, install **MySQL 5.5.62** (`mysql
 
 - From the `osTicket-Installation-Files` folder:
     - Unzip `osTicket-v1.15.8.zip`.
-    - Copy the `upload` folder into `C:\inetpub\wwwroot`.
-    - Rename the `upload` folder to `osTicket`.
-- Once again, restart your computer.
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Alt text](https://imgur.com/gJKlU8Y.png)
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+  - Locate the `upload` folder and move it into `C:\inetpub\wwwroot`.
+
+![Alt text](https://imgur.com/ZYYinxo.png)
+
+![Alt text](https://imgur.com/7RVXfzR.png)
+
+
+  - Rename the `upload` folder to `osTicket`.
+
+
+![Alt text](https://imgur.com/YrCI7Q5.png)
+    
+- Once again, restart the IIS server.
+
 
 
 ## IX. Configure osTicket
 
 - Open `Internet Informational Services`:
-    - Navigate to **Sites** -> **Default** -> **osTickets**.
-    - On the right, click **Browse :80*.
+    - Navigate to the `Connections` tab on the left, and click on the `osTicket` folder; `Sites` -> `Default Web Site` -> `osTicket`.
+
+![Alt text](https://imgur.com/8XVX5yY.png)
+
+  - On the right, under the  click **Browse :80*.
+
+![Alt text](https://imgur.com/jO9dltT.png)
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
-*Note that certain extensions have not been enabled.* Return to `Internet Informational Services`:
-    - Navigate to **Sites** -> **Default** -> **osTicket**
-    - Double-click **PHP Manager** -> Click `Enable or disable an extension`.
-    - Enable the following extensions:
+*Note that certain extensions have not been enabled.*
+
+![Alt text](https://imgur.com/cmt7v3f.png)
+
+
+ Return to `Internet Informational Services`:
+    - Navigate to `Sites` -> `Default Web Site` -> `osTicket`
+    - Double-click `PHP Manager` -> Click `Enable or disable an extension`.
+
+![Alt text](https://imgur.com/fk20IIT.png)
+    
+  - Enable the following extensions:
         - `php_imap.dll`
         - `php_intl.dll`
         - `php_opache.dll`
 
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Alt text](https://imgur.com/FCTZjPt.png)
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+Refresh the osTicket site in your browser, observe the changes made.
+
+![Alt text](https://imgur.com/qHn2wFq.png)
+
 
 
 ## X. Update Configuartion Files
@@ -281,48 +294,77 @@ Rename `ost-config.php`:
   -From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
   -To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
 
+![Alt text](https://imgur.com/yBUPxD4.png)
+
+![Alt text](https://imgur.com/fuELF1g.png)
+
 Assign Permissions:
-  - Disable inheritance -> Remove all permissions
-  - Add new permissions -> **Everyone** -> **Full control**
+
+  - Right click `ost-config.php` and select `Properties`.
+
+![Alt text](https://imgur.com/qp8bQGW.png)
+
+  - Under the `Security` tab, select the `Advanced` button for access to advanced settings.
+
+![Alt text](https://imgur.com/8L0jpoa.png)
+
+
+  - Disable inheritance -> Remove all inherited permissions
+
+![Alt text](https://imgur.com/lLN2uNn.png)
+
+
+  - Click the `Add` button. Follow up by selecting `Select a Principal`.
+
+![Alt text](https://imgur.com/xOTLHN2.png)
 
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
+  - For the sake of this example, we will be adding `Everyone` as a Group. After typing `everyone`, click the `Check Names` button.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Alt text](https://imgur.com/lgILCCf.png)
 
+  - Hit the `Apply` button, then `OK` to continue.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
 
 ## XI. Complete osTicket Setup
 
-In the browser, continue the osTicket setup:
+In the browser, select the `Continue` button to proceed with the osTicket setup:
   - Set **Helpdesk Name**.
+
+![Alt text](https://imgur.com/xVidLod.png)
+  
   - Set **Default E-mail** (this will be the handle that receives e-mails from clientele).
 
+![Alt text](https://imgur.com/qeN2MCB.png)
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
+  - Proceed by inputting credentials for the Admin User; First Name/Last Name, an e-mail address as well as a reliable username and password.
 
 ## XII. Install HeidiSQL and Configure Database
 
 From the `osTicket-Installation-Files` folder, install HeidiSQL.
+
+![Alt text](https://imgur.com/8SOzt8H.png)
+
 Open HeidiSQL and:
-  - Create a new session: **Username:** root / **Password:** root.
-  - Connection to the new session.
-  - Create a new database named `osTicket`.
+  - Create a new session:
   
+![Alt text](https://imgur.com/WMYZ2zu.png)
+
+  Head to the `Settings` tab. When prompted for a Username and Password, be sure to input the credentials you used when setting up the MySQL Server. Aftewards, click the `Open` button.
+
+![Alt text](https://imgur.com/vLwM5Jq.png)
+  
+  - Connect to the new session.
+
+![Alt text](https://imgur.com/FaoF5zd.png)
+
+  - Create a new database named **osTicket** (case sensitive).
+  
+![Alt text](https://imgur.com/SoqdhEI.png)
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -348,14 +390,13 @@ Open HeidiSQL and:
 
 In the browser, complete the setup by filling in the following:
   - MySQL Database: osTicket
-  - MySQL Username: root
-  - MySQL Password: root
+  - Your Username and Password for MySQL
 
 **Install**
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+![Alt text](https://imgur.com/X89dZ5s.png)
+
 
 
 ## XIV. Verify Installation 
