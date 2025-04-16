@@ -366,24 +366,6 @@ Open HeidiSQL and:
   
 ![Alt text](https://imgur.com/SoqdhEI.png)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
 
 ## XIII. Finalize osTicket Installation
@@ -402,11 +384,24 @@ In the browser, complete the setup by filling in the following:
 ## XIV. Verify Installation 
 
 
+![Alt text](https://imgur.com/yF9EpW7.png)
+
+
+- Browse the `osTicket` database in Heidi. Right-click and `Refresh` the database:
+
+![Alt text](https://imgur.com/xeBZ72F.png)
+
+You will now see the database populated with a number of tables.
+
+![Alt text](https://imgur.com/WEixvLU.png)
+
 Access your help desk login page: `http://localhost/osTicket/scp/login.php`.
 
+![Alt text](https://imgur.com/avDdZfO.png)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Add in your Admin credentials used during setup. And you're in!
+
+
 </p>
 
 <h2> Conclusion </h2>
