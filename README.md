@@ -131,7 +131,7 @@ From the `osTicket-Installation-Files folder`:
 
 
 <p>
-Follow the default installation for both executables.
+Follow the default prompts for both executables.
 </p>
 
 </br>
@@ -152,15 +152,11 @@ Follow the default installation for both executables.
 
 ![Alt text](https://imgur.com/7SCofDY.png)
 
-- Run the executable VC_redist.x86.exe. Follow through with the default prompts for the installer.
+- Run the executable VC_redist.x86.exe. Follow through with the installation.
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Alt text](https://imgur.com/3oueiag.png)
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 
@@ -172,31 +168,27 @@ Follow the default installation for both executables.
 
 ## VI. Install MySQL
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-From the os-Ticket-Installation-Files folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi).
-</p>
 
 From the `os-Ticket-Installation-Files` folder, install **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`):
 
+![Alt text](https://imgur.com/uiPtHL3.png)
+
 - Select **Typical Setup**
+
+![Alt text](https://imgur.com/kPMCGpq.png)
+
 - After installation, launch the **MySQL Configuration Wizard**
+
+![Alt text](https://imgur.com/lMjvrke.png)
+
   - Choose **Standard Configuration**
+
+![Alt text](https://imgur.com/17oQ8ZK.png)
+
   - Set a **username** and a **reliable password**
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Alt text](https://imgur.com/xvfgNSc.png)
 
 
 
@@ -208,28 +200,22 @@ From the `os-Ticket-Installation-Files` folder, install **MySQL 5.5.62** (`mysql
 
 
 - Open IIS as an administrator.
+
+![Alt text](https://imgur.com/BbjzCVT.png)
+
+
 - Register PHP:
-  - Go to **PHP Manager** -> Register PHP Path -> `C:\PHP\php-cgi.exe`.
+  - Go to **PHP Manager** -> Register new PHP version -> `C:\PHP\php-cgi.exe`.
+
+![Alt text](https://imgur.com/WOgkPDO.png)
+
+
+![Alt text](https://imgur.com/1pxc65N.png)
+
+
+![Alt text](https://imgur.com/y8IZaim.png)
+
 - Reload IIS. At this point you will want to restart your computer. For Virtual Machine users, you may close the VM or sign out. Once in the Virtual Machines portal, click the 'Stop' button and then restart it by clicking the 'Start' button. This will effectively reset the VM.
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-
-</br>
 
 
 
